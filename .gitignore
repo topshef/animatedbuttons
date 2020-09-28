@@ -1,0 +1,14 @@
+REVISION
+REVISION.php
+error_log
+error_log*.log
+*.bat
+*.png
+*.jpg
+*.gif
+*.zip
+zz*
+
+
+
+
