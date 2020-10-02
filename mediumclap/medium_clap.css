@@ -184,3 +184,12 @@
       transform: scale(1.15); }
     100% {
       transform: scale(1); } }
+.canvas .clap-container {
+    width: 40px !important;
+    height: 40px !important;
+}
+
+.canvas .total-counter {
+    margin-top: -21px !important;
+}
+
