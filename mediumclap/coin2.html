@@ -1,100 +1,104 @@
 <!DOCTYPE html>
 <!-- based on https://gist.github.com/JonathanDn/09c3e0f037c4c52efcf56ee0878d5e4c#file-medium_clap-html
   via https://hackernoon.com/how-i-implemented-the-medium-clap-from-scratch-4a16ac90ad3b
-  
+
   saved from url=(0050)https://fiddle.jshell.net/urft14zr/425/show/light/
   hacked back to shape after js fuddlesticks download...  slowly losing the will to live
-  why is downloading something made to be so complex 
+  why is downloading something made to be so complex
   next time try https://codesandbox.io/
-
 -->
 
 <html>
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <title>medium clap</title>
-  
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="googlebot" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <!DOCTYPE html>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="medium_clap.css">
+    <title>medium clap</title>
+
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="googlebot" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="medium_clap.css">
 </head>
 
 <body>
 
     <div class="canvas">
-    <div id="totalCounter" class="total-counter fader">130</div>
+        <div id="totalCounter" class="total-counter fader">130</div>
 
-    <div id="clap" class="clap-container clicked scale">
+        <div id="clap" class="clap-container clicked scale">
             <!--<i class="clap-icon fa fa-hand-paper-o"></i>-->
-            <img src="https://www.svgrepo.com/show/234310/money-coin.svg" style="width:44px" />
-    </div>
-    
-    <div id="clicker" class="click-counter first-active active">
-        <span class="counter">+3</span>
-    </div>
-    
-    <div id="sonar-clap" class="clap-container-sonar"></div>
-    
-    <div id="particles" class="particles-container" style="transform: rotate(23deg);">
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-    </div>
-    
-    <div id="particles-2" class="particles-container" style="transform: rotate(45deg);">
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-    </div>
-    
-    <div id="particles-3" class="particles-container" style="transform: rotate(20deg);">
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-        <div class="triangle">
-            <div class="square"></div>
-        </div>
-    </div>
-    
-</div>
+            <img src="https://www.svgrepo.com/show/234310/money-coin.svg" style="width:38px" />
 
-<script type="text/javascript" src="medium_clap.js"></script>
+            <div id="clicker" class="click-counter first-active active" style="margin-left:120px;margin-top:-40px">
+                <span class="counter">+3</span>
+            </div>
 
-</body></html>
+        </div>
+
+       
+
+        <div id="sonar-clap" class="clap-container-sonar"></div>
+
+        <div id="particles" class="particles-container" style="transform: rotate(23deg);">
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+        </div>
+
+        <div id="particles-2" class="particles-container" style="transform: rotate(45deg);">
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+        </div>
+
+        <div id="particles-3" class="particles-container" style="transform: rotate(20deg);">
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+            <div class="triangle">
+                <div class="square"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="medium_clap.js"></script>
+
+</body>
+</html>
