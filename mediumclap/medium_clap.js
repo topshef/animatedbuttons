@@ -2,7 +2,6 @@ let accCounter = 0;
 let totalCount = 127;
 const minDeg = 1;
 const maxDeg = 72;
-const clickAmount = 0.01;
 const particlesClasses = [
 	{
     	class: "pop-top"
@@ -55,8 +54,8 @@ function upClickCounter() {
     const clickCounter = document.getElementById("clicker");
     const totalClickCounter = document.getElementById('totalCounter');
 
-	accCounter += clickAmount;
-	clickCounter.children[0].innerText = '+ $' + accCounter;
+	accCounter ++;
+	clickCounter.children[0].innerText = '+' + accCounter;
     totalClickCounter.innerText = totalCount + accCounter;
     
     if (clickCounter.classList.contains('first-active')) {
