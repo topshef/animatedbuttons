@@ -26,14 +26,14 @@
 <body>
 
     <div class="canvas">
-        <div id="totalCounter" class="total-counter fader">130</div>
+        <div id="totalCounter" class="total-counter fader" style="display:none">0</div>
 
         <div id="clap" class="clap-container clicked scale">
             <!--<i class="clap-icon fa fa-hand-paper-o"></i>-->
             <img src="https://www.svgrepo.com/show/234310/money-coin.svg" style="width:30px" />
 
-            <div id="clicker" class="click-counter first-active active" style="margin-left:120px;margin-top:-50px">
-                <span class="counter">+3</span>
+            <div id="clicker" class="click-counter first-active active" style="padding: 5px; margin-left:120px;margin-top:-50px">
+                <span id="clickAmount" class="counter">000</span>
             </div>
 
         </div>
@@ -98,7 +98,7 @@
 
     </div>
 
-    <script type="text/javascript" src="medium_clap.js"></script>
+    <script type="text/javascript" src="coin3.js"></script>
 
 </body>
 </html>
