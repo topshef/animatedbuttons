@@ -22,8 +22,7 @@ const particlesClasses = [
 ];
 
 document.getElementById('totalCounter').innerText = totalCount;
-document.getElementById('clickAmount').innerText = '$' . clickAmount;
-// clickCounter.children[0].innerText = = '$' . clickAmount;
+document.getElementById("clicker").children[0].innerText =  clickAmount;
 
 document.getElementById('clap').onmouseover = function() {
 	let sonarClap = document.getElementById('sonar-clap');
