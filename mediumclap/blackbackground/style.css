@@ -1,5 +1,13 @@
+:root {
+  --background-color: black;
+  --particle-color: white;
+  --main-color: #03a87c;
+
+  --particle-opacity: 0.6;
+}
+
 body {
-  background-color: black;
+  background-color: var(--background-color);
 }
 
 .canvas {
@@ -45,13 +53,13 @@ body {
 
 .canvas .clap-container .clap-icon {
   font-size: 30px;
-  color: #03a87c;
+  color: var(--main-color);
   width: 30px;
   height: 30px;
 }
 
 .canvas .clap-container:hover {
-  border: 1px solid #03a87c;
+  border: 1px solid var(--main-color);
 }
 
 .canvas .clap-container.scale {
@@ -66,7 +74,7 @@ body {
   height: 35px;
   position: absolute;
   top: 132px;
-  background-color: #03a87c;
+  background-color: var(--main-color);
   border-radius: 50%;
   z-index: 1;
 }
@@ -88,7 +96,7 @@ body {
 .canvas .clap-container-sonar {
   width: 60px;
   height: 60px;
-  background: #03a87c;
+  background: var(--main-color);
   border-radius: 50%;
   position: absolute;
   opacity: 0;
@@ -111,7 +119,7 @@ body {
 .canvas .particles-container .triangle {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-top: 10px solid white;
+  border-top: 10px solid var(--particle-color);
   border-bottom: 4px solid transparent;
   position: absolute;
 }
@@ -119,7 +127,7 @@ body {
 .canvas .particles-container .triangle .square {
   width: 5px;
   height: 5px;
-  background: #03a87c;
+  background: var(--main-color);
   position: absolute;
   left: -15px;
   top: 0;
@@ -170,7 +178,7 @@ body {
 @keyframes pop-top {
   0% {
     transform: translate(0, 0) rotate(0);
-    opacity: 0.6;
+    opacity: var(--particle-opacity);
   }
   100% {
     transform: translate(0, -100px) rotate(0);
@@ -181,7 +189,7 @@ body {
 @keyframes pop-top-left {
   0% {
     transform: translate(0, 0) rotate(-55deg);
-    opacity: 0.6;
+    opacity: var(--particle-opacity);
   }
   100% {
     transform: translate(-100px, -50px) rotate(-55deg);
@@ -192,7 +200,7 @@ body {
 @keyframes pop-top-right {
   0% {
     transform: translate(0, 0) rotate(55deg);
-    opacity: 0.6;
+    opacity: var(--particle-opacity);
   }
   100% {
     transform: translate(100px, -50px) rotate(55deg);
@@ -203,7 +211,7 @@ body {
 @keyframes pop-bottom-right {
   0% {
     transform: translate(0, 0) rotate(135deg);
-    opacity: 0.6;
+    opacity: var(--particle-opacity);
   }
   100% {
     transform: translate(70px, 80px) rotate(135deg);
@@ -214,7 +222,7 @@ body {
 @keyframes pop-bottom-left {
   0% {
     transform: translate(0, 0) rotate(-135deg);
-    opacity: 0.;
+    opacity: var(--particle-opacity);
   }
   100% {
     transform: translate(-70px, 80px) rotate(-135deg);
