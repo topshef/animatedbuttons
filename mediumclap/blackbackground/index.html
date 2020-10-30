@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Medium clap</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="canvas">
+      <div id="totalCounter" class="total-counter fader" style="display: none">
+        0
+      </div>
+
+      <div id="clap" class="clap-container clicked scale">
+        <img
+          src="https://www.svgrepo.com/show/234310/money-coin.svg"
+          style="width: 30px"
+        />
+
+        <div
+          id="clicker"
+          class="click-counter first-active active"
+          style="padding: 5px; margin-left: 120px; margin-top: -55px"
+        >
+          <span class="counter"></span>
+        </div>
+      </div>
+
+      <div id="sonar-clap" class="clap-container-sonar"></div>
+
+      <div
+        id="particles"
+        class="particles-container"
+        style="transform: rotate(23deg)"
+      >
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+      </div>
+
+      <div
+        id="particles-2"
+        class="particles-container"
+        style="transform: rotate(45deg)"
+      >
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+      </div>
+
+      <div
+        id="particles-3"
+        class="particles-container"
+        style="transform: rotate(20deg)"
+      >
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+        <div class="triangle">
+          <div class="square"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
