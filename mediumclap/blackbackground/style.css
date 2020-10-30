@@ -106,14 +106,12 @@ body {
   width: 60px;
   height: 60px;
   position: absolute;
-  /* border: 1px solid gray; */
-  /* z-index: 3; */
 }
 
 .canvas .particles-container .triangle {
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
-  border-top: 10px solid red;
+  border-top: 10px solid white;
   border-bottom: 4px solid transparent;
   position: absolute;
 }
@@ -172,7 +170,7 @@ body {
 @keyframes pop-top {
   0% {
     transform: translate(0, 0) rotate(0);
-    opacity: 0.4;
+    opacity: 0.6;
   }
   100% {
     transform: translate(0, -100px) rotate(0);
@@ -183,7 +181,7 @@ body {
 @keyframes pop-top-left {
   0% {
     transform: translate(0, 0) rotate(-55deg);
-    opacity: 0.4;
+    opacity: 0.6;
   }
   100% {
     transform: translate(-100px, -50px) rotate(-55deg);
@@ -194,7 +192,7 @@ body {
 @keyframes pop-top-right {
   0% {
     transform: translate(0, 0) rotate(55deg);
-    opacity: 0.4;
+    opacity: 0.6;
   }
   100% {
     transform: translate(100px, -50px) rotate(55deg);
@@ -205,7 +203,7 @@ body {
 @keyframes pop-bottom-right {
   0% {
     transform: translate(0, 0) rotate(135deg);
-    opacity: 0.4;
+    opacity: 0.6;
   }
   100% {
     transform: translate(70px, 80px) rotate(135deg);
@@ -216,7 +214,7 @@ body {
 @keyframes pop-bottom-left {
   0% {
     transform: translate(0, 0) rotate(-135deg);
-    opacity: 0.4;
+    opacity: 0.;
   }
   100% {
     transform: translate(-70px, 80px) rotate(-135deg);

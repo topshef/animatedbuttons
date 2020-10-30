@@ -1,6 +1,4 @@
-let accCounter = 0;
-let totalCount = 0;
-
+// Constants
 const minDeg = 1;
 const maxDeg = 72;
 const clickAmount = 0.05;
@@ -12,6 +10,11 @@ const particlesClasses = [
   "pop-bottom-left",
 ];
 
+// Variables
+let accCounter = 0;
+let totalCount = 0;
+
+// Initial setup
 document.getElementById("totalCounter").innerText = totalCount;
 document.getElementById("clicker").children[0].innerText = clickAmount;
 
@@ -25,7 +28,6 @@ document.getElementById("clap").onmouseover = function () {
 
 document.getElementById("clap").onclick = function () {
   const clap = document.getElementById("clap");
-  const clickCounter = document.getElementById("clicker");
   const particles = document.getElementById("particles");
   const particles2 = document.getElementById("particles-2");
   const particles3 = document.getElementById("particles-3");
