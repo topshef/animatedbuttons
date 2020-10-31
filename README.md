@@ -6,6 +6,7 @@ technology.
 [KPAY](https://kpay.live) invites development and innovation around micro-interactions, and will tip for positive contribution. All contributions will remain open-source unless otherwise requested.
 
 • do you have an idea for a micro-payment interaction or animation?  
+• are you able to help close any of the issues here?
 • are you able to contribute code ?  
 • can you help curate a library of micro-interaction resources ?  
 • can you help manage this repo?  
