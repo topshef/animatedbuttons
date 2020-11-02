@@ -1,9 +1,9 @@
 :root {
   --background-color: black;
-  --particle-color: white;
-  --main-color: #03a87c;
+  --particle-color: red;
+  --main-color: #0000ff;
 
-  --particle-opacity: 0.6;
+  --particle-opacity: 1;
 }
 
 body {
