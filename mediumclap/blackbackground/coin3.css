@@ -1,7 +1,12 @@
 :root {
   --background-color: black;
   --particle-color: red;
+  --particle-square-color: turquoise;
   --main-color: #0000ff;
+  --counter-color: #0000ff;
+  --coin-color: white;
+  --coin-hover-border-color: red;
+  --coin-hover-color: lightblue;
 
   --particle-opacity: 1;
 }
@@ -45,7 +50,7 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 50%;
   z-index: 2;
-  background: #fff;
+  background: var(--coin-color);
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
@@ -53,13 +58,12 @@ body {
 
 .canvas .clap-container .clap-icon {
   font-size: 30px;
-  color: var(--main-color);
   width: 30px;
   height: 30px;
 }
 
 .canvas .clap-container:hover {
-  border: 1px solid var(--main-color);
+  border: 1px solid var(--coin-hover-border-color);
 }
 
 .canvas .clap-container.scale {
@@ -74,7 +78,7 @@ body {
   height: 35px;
   position: absolute;
   top: 132px;
-  background-color: var(--main-color);
+  background-color: var(--counter-color);
   border-radius: 50%;
   z-index: 1;
 }
@@ -96,7 +100,7 @@ body {
 .canvas .clap-container-sonar {
   width: 60px;
   height: 60px;
-  background: var(--main-color);
+  background: var(--coin-hover-color);
   border-radius: 50%;
   position: absolute;
   opacity: 0;
@@ -127,7 +131,7 @@ body {
 .canvas .particles-container .triangle .square {
   width: 5px;
   height: 5px;
-  background: var(--main-color);
+  background: var(--particle-square-color);
   position: absolute;
   left: -15px;
   top: 0;
