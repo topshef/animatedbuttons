@@ -1,12 +1,14 @@
 :root {
   --background-color: black;
   --particle-color: red;
-  --particle-square-color: turquoise;
-  --main-color: #0000ff;
-  --counter-color: #0000ff;
-  --coin-color: white;
-  --coin-hover-border-color: red;
-  --coin-hover-color: lightblue;
+  --particle-square-color: orange;
+  --main-color: blue;
+  --counter-color: orange;
+  --counter-font-color: black;
+  --coin-color: black;
+  --coin-hover-border-color: yellow;
+  --coin-hover-color: orange;
+
 
   --particle-opacity: 1;
 }
@@ -63,7 +65,7 @@ body {
 }
 
 .canvas .clap-container:hover {
-  border: 1px solid var(--coin-hover-border-color);
+border: 1.5px solid var(--coin-hover-border-color);
 }
 
 .canvas .clap-container.scale {
@@ -86,7 +88,7 @@ body {
 .canvas .click-counter .counter {
   font-family: sans-serif;
   font-size: 14px;
-  color: #fff;
+  color: var(--counter-font-color);
 }
 
 .canvas .click-counter.first-active {
